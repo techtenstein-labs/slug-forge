@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Techtenstein API Docs</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Free, no-auth developer APIs by Techtenstein.">
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;max-width:840px;margin:2rem auto;padding:0 1rem;color:#111;line-height:1.55}
+h1{margin-top:0}
+code{background:#f4f4f4;padding:2px 6px;border-radius:4px;font-size:.92em}
+pre{background:#0b1020;color:#e6e6ff;padding:1rem;border-radius:8px;overflow:auto}
+.api{border:1px solid #eee;border-radius:12px;padding:1.25rem;margin:1rem 0;background:#fafafa}
+.api h2{margin-top:0}
+.badges span{background:#e6f4ff;color:#0369a1;font-size:.8em;padding:2px 8px;border-radius:999px;margin-right:4px}
+a{color:#2b6cb0}
+</style>
+</head>
+<body>
+<h1>Techtenstein API Docs</h1>
+<p>Free, no-auth developer utility APIs. CORS enabled on every endpoint. OpenAPI 3.1 spec at <code>/openapi.json</code>. Health at <code>/health</code>.</p>
+
+<div class="api">
+  <h2>uuid-tools</h2>
+  <div class="badges"><span>Development</span><span>No auth</span><span>CORS</span></div>
+  <p>Generate, decode, and validate UUIDs (v4 random, v7 time-sortable).</p>
+  <ul>
+    <li><a href="https://uuid-tools.techtenstein.com/">uuid-tools.techtenstein.com</a></li>
+    <li><a href="https://uuid-tools.techtenstein.com/openapi.json">OpenAPI spec</a></li>
+  </ul>
+  <pre>curl https://uuid-tools.techtenstein.com/v7?n=3</pre>
+</div>
+
+<div class="api">
+  <h2>slug-forge</h2>
+  <div class="badges"><span>Text</span><span>No auth</span><span>CORS</span></div>
+  <p>Turn any Unicode string into a clean URL-safe slug.</p>
+  <ul>
+    <li><a href="https://slug-forge.techtenstein.com/">slug-forge.techtenstein.com</a></li>
+    <li><a href="https://slug-forge.techtenstein.com/openapi.json">OpenAPI spec</a></li>
+  </ul>
+  <pre>curl "https://slug-forge.techtenstein.com/slug?text=H%C3%A9llo%20W%C3%B6rld"</pre>
+</div>
+
+<div class="api">
+  <h2>lorem-forge</h2>
+  <div class="badges"><span>Text</span><span>No auth</span><span>CORS</span></div>
+  <p>Lorem ipsum placeholder text — words, sentences, paragraphs.</p>
+  <ul>
+    <li><a href="https://lorem-forge.techtenstein.com/">lorem-forge.techtenstein.com</a></li>
+    <li><a href="https://lorem-forge.techtenstein.com/openapi.json">OpenAPI spec</a></li>
+  </ul>
+  <pre>curl https://lorem-forge.techtenstein.com/paragraphs?n=2</pre>
+</div>
+
+<p style="color:#666;font-size:.9em">Built and shipped daily. <a href="https://github.com/techtenstein-labs">GitHub</a></p>
+</body>
+</html>
